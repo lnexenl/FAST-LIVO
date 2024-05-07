@@ -63,7 +63,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
+set(OpenCV_DIR "/usr/lib/cmake/opencv4")
 FIND_PACKAGE(OpenCV REQUIRED)
+set(Sophus_DIR "/home/lnex/Work/fast-livo/src/3rdparty/Sophus/build")
 FIND_PACKAGE(Sophus REQUIRED)
 FIND_PACKAGE(Boost REQUIRED COMPONENTS thread)
 set(Sophus_LIBRARIES libSophus.so)
